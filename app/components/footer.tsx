@@ -30,7 +30,7 @@ const Footer = () => {
           <div className="flex flex-col gap-4 items-center md:items-start">
             <div className="flex items-center gap-2">
               {SocialMedia.map((item, index) => (
-                <span>
+                <span key={index}>
                   <Image key={index} src={item.icon} alt={item.name} />
                 </span>
               ))}
